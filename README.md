@@ -20,3 +20,35 @@ Overloading3.java:3: error: method add(int,int) is already defined in class A st
 To overcome this problem method should be overloaded with the same return type.
 
 2)  Write a program in java using Arrays, that sorts the element in descending order.
+
+import java.util.Arrays;
+
+import java.util.Scanner;
+
+
+public class acad {
+
+public static void main(String[] args){
+  
+Scanner sc=new Scanner(System.in);
+    
+int n=sc.nextInt(); //size of array
+    
+int[] arr=new int[n];
+    
+for(int i=0;i<n;i++){
+    
+	arr[i]=sc.nextInt();
+      
+		}
+    
+		Arrays.sort(arr);               //sorting array
+		for(int i=arr.length-1;i>=0;i--){
+    
+			System.out.print(arr[i]+" "); // displaying sorted reverse ordered array elements
+      
+		}
+    
+	}
+  
+}
